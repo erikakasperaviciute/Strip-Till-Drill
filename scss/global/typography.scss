@@ -1,0 +1,106 @@
+h1, h2, h3 {
+    font-family: 'Clash Display', sans-serif;
+}
+
+a, p, span, th, td {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    font-size: 1em;
+
+    @include tablet {
+        font-size: 0.88em;
+    }
+
+    @include mobile {
+        font-size: 1em;
+    }
+}
+
+h1 {
+    font-size: calc(2em + 5vw);
+
+    @include mobile {
+        font-size: calc(2.2em + 2vw);
+        line-height: 2.5em;
+    }
+
+}
+
+h2 {
+    font-size: calc(2.5em + 1vw);
+
+    @include tablet {
+        font-size: 2em;
+    }
+
+    @include smaller-tablet {
+        font-size: calc(1.5em + 1vw);
+    }
+
+    @include small-screen {
+        font-size: 2.5em;
+    }
+}
+
+h3 {
+    font-size: calc(0.85em + 1vw);
+
+    @include tablet {
+        font-size: calc(0.65em + 1vw);
+    }
+
+    @include small-screen {
+        font-size: calc(0.85em + 1vw);
+    }
+
+    @include mobile {
+        font-size: calc(1em + 1vw);
+    }
+
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 0.94em;
+
+    @include tablet {
+        font-size: 0.82em;
+    }
+
+    @include smaller-tablet {
+        font-size: 0.82em;
+    }
+
+    @include small-screen {
+        font-size: 0.82em;
+    }
+
+    @include mobile {
+        font-size: 0.82em;
+    }
+}
+
+th, td {
+    font-size: 1em;
+
+    @include tablet {
+        font-size: 0.8em;
+    }
+
+    @include smaller-tablet {
+        font-size: 0.8em;
+    }
+
+    @include small-screen {
+        font-size: 0.8em;
+    }
+
+    @include mobile {
+        font-size: 0.65em;
+    }
+}
